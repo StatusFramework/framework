@@ -1,0 +1,38 @@
+{
+    "name": "StatusFramework/framework",
+    "description": "Status Framework",
+    "license": "MIT",
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "StatusFramework",
+            "email": "status.framework@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Status\\": "src/packages/",
+            "Status\\Database\\": "src/packages/service/database/",
+            "Status\\Type\\": "src/packages/service/type/",
+            "Status\\Session\\": "src/packages/service/session/",
+            "Status\\Cookie\\": "src/packages/service/cookie/",
+            "Status\\Security\\": "src/packages/service/security/"
+        },
+        "classmap": [
+            "src/packages/",
+            "src/packages/service/database/",
+            "src/packages/service/type/",
+            "src/packages/service/session/",
+            "src/packages/service/cookie/",
+            "src/packages/service/security/"
+        ],
+        "files": [
+            "src/packages/service/functions.php"
+        ]
+    },
+    "require": {
+        "php": ">=7.3"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
